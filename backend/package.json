@@ -32,7 +32,8 @@
     "morgan": "^1.10.0",
     "pdfkit": "^0.13.0",
     "socket.io": "^4.7.2",
-    "sqlite3": "^5.1.6"
+    "sqlite3": "^5.1.6",
+    "stellar-sdk": "^11.0.0"
   },
   "devDependencies": {
     "@types/node": "^18.11.9",
