@@ -84,6 +84,7 @@ const paymentsRoutes = require('./routes/payments');
 const paymentsExportRoutes = require('./src/routes/paymentsExport');
 const stellarRoutes = require('./routes/stellar');
 const providerIntegrationRoutes = require('./routes/providerIntegration');
+const insuranceIntegrationRoutes = require('./routes/insuranceIntegration');
 
 const app = express();
 const server = createServer(app);
@@ -122,6 +123,7 @@ app.use('/api/payments', paymentsRoutes);
 app.use('/api/payments', paymentsExportRoutes);
 app.use('/api/stellar', stellarRoutes);
 app.use('/api/provider-integration', providerIntegrationRoutes);
+app.use('/api/insurance-integration', insuranceIntegrationRoutes);
 
 // Health check
 app.get('/api/health', (req, res) => {
